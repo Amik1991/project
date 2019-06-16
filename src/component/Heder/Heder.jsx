@@ -1,6 +1,6 @@
 import React from "react";
-import App from "../App";
-import s from'./Heder.module.css'
+import App from "../../App";
+import s from './Heder.module.css'
 const Heder =()=>{
 return(
 <heder className={s.heder}>
