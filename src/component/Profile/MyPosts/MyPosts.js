@@ -3,7 +3,8 @@ import React from "react";
 import Post from "../Posts/Post"
 
 
-const MyPosts = () => {
+const MyPosts = (props) => {
+
     return (
         <div>
             My posts
@@ -12,12 +13,9 @@ const MyPosts = () => {
                 <button>add post</button>
             </div>
             <div className={s.posts}>
-          <Post/>
-          <Post/>
-          <Post/>
-          <Post/>
-          <Post/>
-          <Post/>
+          <Post messages = 'hello' likeCount='50'/>
+          <Post messages = 'yoo' likeCount='20'/>
+
             </div>
 
         </div>

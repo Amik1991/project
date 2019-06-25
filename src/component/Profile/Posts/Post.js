@@ -2,13 +2,18 @@ import s from "./Posts.module.css";
 import React from "react";
 
 
-const Post = () => {
+const Post = (props) => {
+
     return (
 
 
-        <div className={s.item}>post 1
+        <div className={s.item}>
             <img src='https://i.ytimg.com/vi/Y5GLCBjHR8U/maxresdefault.jpg'/>
-            <div> <span>like</span></div>
+            {props.messages}
+
+            <div><span>like</span>{props.likeCount} </div>
+
+
         </div>
 
 
